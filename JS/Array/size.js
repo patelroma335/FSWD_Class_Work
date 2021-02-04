@@ -9,4 +9,4 @@ console.log(length);
 console.log(size);
 
 // How to get last value of array
-console.log(size[size.length - 2]);
+console.log(size[size.length - 1]);
