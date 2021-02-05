@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onChange_Event</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>onChange/onFocus</h1>
+  </br></br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Email"
+                id="email"
+                class="form-control"
+                onfocus="onFocus()"
+                onchange="onChange()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+        function onFocus() {
+            document.getElementById('email').style.background = "pink";           
+            }
+
+        function onChange() {
+            alert('change');
+        }
+    </script>
+  </body>
+</html>
